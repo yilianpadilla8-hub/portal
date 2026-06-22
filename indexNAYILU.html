@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Nayilu | Tienda Premium</title>
+  <meta name="description" content="Café Nayilu, café molido hondureño premium desde San Luis, Comayagua." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader"><div class="loader-cup">☕</div><h2>Preparando Café Nayilu...</h2></div>
+
+  <div class="topbar">🚚 Envío gratis en compras mayores a L500 · 🎁 Club Nayilu: compra 10 bolsas y recibe 1 gratis</div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#inicio" class="brand"><span>☕</span><b>Nayilu</b></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes">Quiénes Somos</a>
+        <a href="#productos">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#recetas">Recetas</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#club">Club Nayilu</a>
+        <a href="#contacto">Contáctanos</a>
+      </div>
+      <div class="nav-actions">
+        <button class="round" id="songBtn" title="Nuestra canción">🎵</button>
+        <button class="round" id="themeBtn" title="Modo oscuro">🌙</button>
+        <button class="round" id="chatBtn" title="Chatbot">💬</button>
+        <button class="round cart-trigger" id="cartBtn" title="Carrito">🛒<span id="cartCount">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div><div class="hero-overlay"></div><div class="falling-beans" id="beans"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow">🌿 Café hondureño premium</span>
+        <h1>El sabor que inspira tus mejores momentos</h1>
+        <p>Café molido Nayilu nace en San Luis, Comayagua, con aroma de montaña, tradición familiar y una experiencia cálida que enamora desde la primera taza.</p>
+        <div class="hero-cta">
+          <a class="btn gold" href="#productos">Comprar ahora</a>
+          <a class="btn glass" href="#quienes">Conocer la historia</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="quienes" class="section reveal">
+      <div class="container">
+        <div class="title"><span>Sobre la marca</span><h2>Quiénes Somos</h2><p>Una tienda hondureña creada para llevar café de calidad premium a cada hogar.</p></div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Café Nayilu</h3>
+            <p>Café Nayilu es una marca inspirada en la tradición cafetalera de Honduras. Nace con el propósito de ofrecer café molido de presentación elegante, sabor auténtico y atención personalizada, conectando la naturaleza de San Luis, Comayagua, con los momentos especiales de cada familia.</p>
+            <p>Nuestra experiencia combina calidez, confianza, empaque premium y facilidad de compra por WhatsApp.</p>
+          </div>
+          <img src="img/hero.png" alt="Café Nayilu en finca hondureña" />
+        </div>
+        <div class="values-grid">
+          <article><i>🎯</i><h4>Misión</h4><p>Ofrecer café molido hondureño de calidad premium con una experiencia moderna, confiable y cercana.</p></article>
+          <article><i>👁️</i><h4>Visión</h4><p>Ser una marca reconocida por su sabor, elegancia, servicio y orgullo hondureño.</p></article>
+          <article><i>🤎</i><h4>Valores</h4><p>Calidad, tradición, honestidad, calidez, servicio y amor por Honduras.</p></article>
+          <article><i>🌄</i><h4>Origen</h4><p>Inspirado en las montañas, cafetales y familias de San Luis, Comayagua.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="section dark-section reveal">
+      <div class="container">
+        <div class="title light"><span>Tienda Nayilu</span><h2>Productos</h2><p>Bolsas premium oficiales, sin cantidades repetidas.</p></div>
+        <div class="toolbar"><input id="searchInput" placeholder="Buscar café..." /><select id="filterSelect"><option value="todos">Todos</option><option value="tradicional">Tradicional</option><option value="nuevo">Nuevos</option><option value="gourmet">Gourmet</option></select></div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section id="lanzamientos" class="section reveal">
+      <div class="container">
+        <div class="title"><span>Nuevo 2026</span><h2>Nuevos lanzamientos</h2><p>Café con cacao, canela, pimienta y una edición gourmet especial.</p></div>
+        <div class="product-grid" id="launchGrid"></div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section reveal">
+      <div class="container">
+        <div class="banner"><img src="img/beneficios.png" alt="Beneficios Café Nayilu"></div>
+        <div class="benefit-grid">
+          <article><img src="img/beneficio_1.jpg"><h3>Cafetales hondureños</h3><p>Inspirado en la naturaleza y el aroma de las montañas.</p></article>
+          <article><img src="img/beneficio_2.jpg"><h3>Aroma y sabor</h3><p>Una taza cálida, elegante y balanceada.</p></article>
+          <article><img src="img/beneficio_3.jpg"><h3>Café recién molido</h3><p>Ideal para disfrutarlo fresco cada día.</p></article>
+          <article><img src="img/beneficio_4.jpg"><h3>Momentos especiales</h3><p>Perfecto para compartir en familia o con amigos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="promociones" class="section promo-section reveal">
+      <div class="container promo-card">
+        <div><span class="eyebrow">Promoción especial</span><h2>Oferta termina en</h2><div id="timer" class="timer">02:35:40</div><p>Envío gratis en compras mayores a L500 y beneficios exclusivos para miembros del Club Nayilu.</p></div>
+        <a href="#productos" class="btn gold">Aprovechar promoción</a>
+      </div>
+    </section>
+
+    <section id="recetas" class="section reveal">
+      <div class="container">
+        <div class="banner"><img src="img/preparacion.png" alt="Preparación perfecta"></div>
+        <div class="title"><span>Paso a paso</span><h2>Preparación perfecta</h2><p>Cada paso tiene una explicación completa al hacer clic.</p></div>
+        <div class="steps-grid" id="stepsGrid"></div>
+        <div class="banner mt"><img src="img/recetas.png" alt="Recetas con café"></div>
+        <div class="title"><span>Recetas Nayilu</span><h2>Recetas con café</h2><p>Ideas deliciosas para preparar con Café Nayilu.</p></div>
+        <div class="recipe-grid" id="recipeGrid"></div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="section dark-section reveal">
+      <div class="container">
+        <div class="banner"><img src="img/testimonios.png" alt="Testimonios Café Nayilu"></div>
+        <div class="title light"><span>Clientes felices</span><h2>Testimonios</h2><p>Comentarios realistas de clientes disfrutando Café Nayilu.</p></div>
+        <div class="testimonial-grid">
+          <article><img src="img/testimonio_1.jpg"><div><h3>María Fernanda</h3><span>★★★★★</span><p>“El aroma se siente desde que abres la bolsa. Me encanta compartirlo con mi familia.”</p></div></article>
+          <article><img src="img/testimonio_2.jpg"><div><h3>Carlos Mendoza</h3><span>★★★★★</span><p>“Tiene presentación elegante y un sabor que parece de marca internacional.”</p></div></article>
+          <article><img src="img/testimonio_3.jpg"><div><h3>Ana Rodríguez</h3><span>★★★★★</span><p>“Lo llevé a una reunión y todos preguntaron dónde podían comprarlo.”</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="club" class="section reveal">
+      <div class="container">
+        <div class="banner"><img src="img/club.png" alt="Club Nayilu"></div>
+        <div class="club-grid">
+          <div class="club-info">
+            <span class="eyebrow">Programa de fidelidad</span><h2>Únete al Club Nayilu</h2>
+            <p>Disfruta promociones exclusivas, lanzamientos antes que todos y una bolsa gratis por cada 10 bolsas compradas.</p>
+            <div class="loyalty"><b>Progreso de fidelidad</b><div class="bar"><span id="clubProgress"></span></div><p id="clubProgressText">0 de 10 bolsas</p></div>
+          </div>
+          <form id="clubForm" class="club-form">
+            <input required id="clubName" placeholder="Nombre completo" />
+            <input required id="clubWhats" placeholder="Número de WhatsApp" />
+            <input required id="clubEmail" type="email" placeholder="Correo electrónico" />
+            <input required id="clubCity" placeholder="Ciudad" />
+            <input required id="clubBirthday" type="date" />
+            <select id="clubFavorite"><option>Tradicional</option><option>Premium</option><option>Con Cacao</option><option>Con Canela</option><option>Con Pimienta</option><option>Gourmet</option></select>
+            <label class="check"><input required type="checkbox" /> Acepto recibir promociones y novedades</label>
+            <button class="btn gold" type="submit">✨ Quiero pertenecer al Club Nayilu</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="pagos" class="section reveal">
+      <div class="container">
+        <div class="title"><span>Compra segura</span><h2>Métodos de pago</h2><p>Compra fácil, moderna y confiable.</p></div>
+        <div class="payment-grid"><article>💳<b>Tarjeta</b><p>Crédito o débito</p></article><article>🏦<b>Transferencia</b><p>Pago bancario</p></article><article>📦<b>Contra entrega</b><p>Pagas al recibir</p></article><article>📲<b>Billetera móvil</b><p>Desde tu celular</p></article><article>🔗<b>Pago por enlace</b><p>Rápido y seguro</p></article></div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartPanel" class="cart-panel">
+    <div class="cart-head"><h2>🛒 Carrito</h2><button class="round" id="closeCart">✕</button></div>
+    <div class="checkout-steps"><span class="active"></span><span class="active"></span><span></span></div>
+    <div id="cartItems"></div>
+    <div class="cart-summary">
+      <h3>Resumen de tu compra</h3>
+      <select id="paymentMethod"><option>Tarjeta de crédito/débito</option><option>Transferencia bancaria</option><option>Pago contra entrega</option><option>Billetera móvil</option><option>Pago por enlace</option></select>
+      <div class="summary-row"><span>Subtotal</span><b id="subtotal">L0.00</b></div>
+      <div class="summary-row"><span>Descuento</span><b id="discount">L0.00</b></div>
+      <div class="summary-row"><span>Envío</span><b id="shipping">L0.00</b></div>
+      <div class="summary-row total"><span>Total a pagar</span><b id="total">L0.00</b></div>
+      <button class="btn gold full" id="checkoutBtn">Finalizar pedido</button>
+      <button class="btn danger full" id="clearCartBtn">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <div id="chatbot" class="chatbot">
+    <div class="chat-head"><b>Asistente Nayilu</b><button id="closeChat">✕</button></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot">¡Hola! Soy el Asistente Nayilu ☕ Elige una opción o escribe tu consulta.</div>
+      <div class="quick-options" id="quickOptions"></div>
+    </div>
+    <div class="chat-input"><input id="chatInput" placeholder="Escribe tu pregunta..." /><button id="sendChat">➤</button></div>
+  </div>
+  <a class="whatsapp" href="https://wa.me/504988400093" target="_blank">💬</a>
+  <button id="toTop" class="to-top">↑</button>
+
+  <div id="modal" class="modal"><div class="modal-card"><button id="closeModal" class="modal-close">✕</button><div id="modalContent"></div></div></div>
+  <div id="songModal" class="modal"><div class="modal-card video-card"><button id="closeSong" class="modal-close">✕</button><h2>🎵 Nuestra canción</h2><div class="video-wrap"><iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" title="Ed Sheeran Perfect" allowfullscreen></iframe></div></div></div>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-grid">
+      <div><h2>Café Nayilu</h2><p>Café molido hondureño premium desde San Luis, Comayagua.</p><div class="social"><a>📘</a><a>📸</a><a href="https://wa.me/504988400093">💬</a></div></div>
+      <div><h3>Contacto</h3><p>WhatsApp Business: +504 9884-00093</p><p>Instagram: @nayilu.cafe</p><p>Correo: yilianpadilla8@gmail.com</p></div>
+      <div><h3>Ubicación y horario</h3><p>San Luis, Comayagua, Honduras.</p><p>Lunes a sábado: 8:00 a.m. - 6:00 p.m.</p><p>Políticas de compra, envío y privacidad disponibles al confirmar pedido.</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
